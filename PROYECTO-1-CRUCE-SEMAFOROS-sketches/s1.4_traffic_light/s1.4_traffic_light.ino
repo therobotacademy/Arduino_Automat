@@ -33,8 +33,8 @@ void loop() {
   digitalWrite(GREEN_PIN, LOW);
   
   // enciende y apaga el verde tres veces con un ciclo
-// que tiene un contador i que cambia de acuerdo con la regla especificada: en cada iteración aumenta en 1
-// el ciclo se ejecutará hasta que la condición especificada sea verdadera (aquí: i <3)
+  // que tiene un contador i que cambia de acuerdo con la regla especificada: en cada iteración aumenta en 1
+  // el ciclo se ejecutará hasta que la condición especificada sea verdadera (aquí: i <3)
   for(int i = 0; i < 3; i = i+1)
   {
     delay(green_blink);

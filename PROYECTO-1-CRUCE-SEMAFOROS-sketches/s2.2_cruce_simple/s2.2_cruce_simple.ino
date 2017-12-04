@@ -9,7 +9,7 @@
 #define S_GREEN_PIN 6
 
 // Factor de escala de tiempos de estado
-float speed_ = 0.5;
+float speed_ = 1;
 
 // Tiempos de estado (referencia)
 int E1 = 4500;
