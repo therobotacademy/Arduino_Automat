@@ -9,13 +9,19 @@
  * @hardware: David Cuartielles, Aaron Hallborg
  * modifed by: aprendiendoarduino
  */
+#define pin2 3
+#define pin3 5
+#define pin4 8
+#define pin5 10
+#define pin6 12
 
-int pin2 = 3;
-int pin3 = 5;
-int pin4 = 8;
-int pin5 = 10;
-int pin6 = 12;
-int timer = 400;
+//int pin2 = 3;
+//int pin3 = 5;
+//int pin4 = 8;
+//int pin5 = 10;
+//int pin6 = 12;
+
+float timer = 100;
 
 void setup(){
   Serial.begin(9600);
@@ -27,8 +33,6 @@ void setup(){
 }
 
 void loop() {
-
-   timer = analogRead(A0)/4;	//El valor leido por analog read es el temporizador
    Serial.print("timer= ");
    Serial.println(timer);
    
