@@ -1,6 +1,6 @@
-int pushButton = 10;
-int pushButton_Analog = A0;
-int led = 13; // LED interno de la placa
+int pushButton = 12;
+int pushButton_Analog = A5;
+int led = 13; // LED interno de la placa LED_BUILTIN
 
 int buttonState = 0;  // Estado del pulsador
 int buttonAnalog = 0;  // Lectura analógica del pulsador

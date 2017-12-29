@@ -1,6 +1,6 @@
 // this constant won't change:
-const int  buttonPin = 11;    // the pin that the pushbutton is attached to
-const int ledPin = 12;       // the pin that the LED is attached to
+const int  buttonPin = 10;    // the pin that the pushbutton is attached to
+const int ledPin = 11;       // the pin that the LED is attached to
 const int led_freq_pushes= 2; // Frequency of change of LED state in function of number of pushes
 int estadoLed = 0;           // LED is off at starting
 
