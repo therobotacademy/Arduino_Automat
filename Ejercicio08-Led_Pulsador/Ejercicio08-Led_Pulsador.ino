@@ -23,7 +23,7 @@ void loop() {
   }
   else {
     digitalWrite(led, HIGH);
-    Serial.println("Enciendo Led con valor analógico ");
+    Serial.print("Enciendo Led con valor analógico ");
   }
-  Serial.println(buttonAnalog);
+  Serial.println(buttonAnalog/1023*5);
 }

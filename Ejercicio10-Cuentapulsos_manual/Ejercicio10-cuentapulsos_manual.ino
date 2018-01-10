@@ -2,9 +2,9 @@
 const int  buttonPin = 10;    // the pin that the pushbutton is attached to
 const int ledPin = 11;       // the pin that the LED is attached to
 const int led_freq_pushes= 2; // Frequency of change of LED state in function of number of pushes
-int estadoLed = 0;           // LED is off at starting
 
 // Variables will change:
+int estadoLed = 0;           // LED is off at starting
 int buttonPushCounter = 0;   // counter for the number of button presses
 int buttonState = 0;         // current state of the button
 int lastButtonState = 0;     // previous state of the button

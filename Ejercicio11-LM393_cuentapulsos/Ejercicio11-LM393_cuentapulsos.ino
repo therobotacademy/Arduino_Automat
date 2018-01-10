@@ -5,7 +5,7 @@ float rpm = 0;           // Revoluciones por minuto calculadas.
 float velocity = 0;                 //Velocidad en [Km/h]
 volatile byte pulses = 0;       // Número de pulsos leidos por el Arduino en un segundo
 unsigned long timeold = 0;  // Tiempo 
-unsigned int pulsesperturn = 20; // Número de muescas que tiene el disco del encoder.
+unsigned int pulsesperturn = 1; //20; // Número de muescas que tiene el disco del encoder.
 const int wheel_diameter = 65;   // Diámetro de la rueda pequeña[mm]
 static volatile unsigned long debounce = 0; // Tiempo del rebote.
 ////  Configuración del Arduino /////////////////////////////////////////////////////////
@@ -45,7 +45,7 @@ void setup(){
 ///////////////////////////Función que cuenta los pulsos buenos ///////////////////////////////////////////
  void counter(){
   if(  digitalRead(encoder_pin) && (micros()-debounce > 500) && digitalRead(encoder_pin) ) { 
-// Vuelve a comprobar que el encoder envia una señal buena y luego comprueba que el tiempo es superior a 1000 microsegundos y vuelve a comprobar que la señal es correcta.
+// Vuelve a comprobar que el encoder envia una señal buena y luego comprueba que el tiempo es superior a 500 microsegundos y vuelve a comprobar que la señal es correcta.
         debounce = micros(); // Almacena el tiempo para comprobar que no contamos el rebote que hay en la señal.
         pulses++;}  // Suma el pulso bueno que entra.
         else ; } 

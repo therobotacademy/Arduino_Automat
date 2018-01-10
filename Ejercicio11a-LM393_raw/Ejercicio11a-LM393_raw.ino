@@ -1,6 +1,6 @@
 /// Variables //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-int encoder_pin_D = 2;             //Pin 2 digital, donde se conecta el encoder
-int encoder_pin_A = A5;             //Pin 2 digital, donde se conecta el encoder
+int encoder_pin_D = 2;             //Pin 2 Digital, donde se conecta el encoder
+int encoder_pin_A = A5;             //Pin 5 Analógico, donde se conecta el encoder
 
 ////  Configuración del Arduino /////////////////////////////////////////////////////////
 void setup(){
