@@ -14,16 +14,17 @@ void setup() {
 void loop() {
   buttonState = digitalRead(pushButton);
   buttonAnalog = analogRead(pushButton_Analog);
-  Serial.println(buttonState);
+  Serial.print(buttonState);
   delay(1);
 
   if (buttonState == LOW) {
     digitalWrite(led, LOW);
-    Serial.print("Apago Led con valor analógico ");
+    Serial.print("  Apago Led con valor analógico ");
   }
   else {
     digitalWrite(led, HIGH);
-    Serial.print("Enciendo Led con valor analógico ");
+    Serial.print("\tEnciendo Led con valor analógico ");
   }
-  Serial.println(buttonAnalog/1023*5);
+  Serial.println((float)buttonAnalog/1023*5);
+  delay(500);
 }
