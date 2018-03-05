@@ -7,7 +7,7 @@
 #include <OneWire.h>                 //Se importan las librerías
 #include <DallasTemperature.h>
 #define Pin_temp  2                  //Se declara el pin donde se conectará el sensor de temperatura DS18B20
-#define Pin_led   9                  // Pin del LED
+#define Pin_led   11                  // Pin del LED
 
 int temp;// Variable sensor de temperaura
 boolean status=LOW; //Estado del led
